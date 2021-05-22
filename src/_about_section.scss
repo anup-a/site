@@ -19,6 +19,11 @@
     p.top-text {
         font-size: 1.75rem;
         letter-spacing: 1mm;
+
+        @media screen and (max-width: 640px) {
+            font-size: 1.2rem;
+            letter-spacing: 0.5mm;
+        }
     }
 
     h1.name-heading {
@@ -41,6 +46,12 @@
             margin-top: 2rem;
             padding-top: 1rem;
             margin-bottom: 1.5rem;
+        }
+
+        @media screen and (max-width: 640px) {
+            font-size: 0.8rem;
+            margin-bottom: 0;
+
         }
     }
 }

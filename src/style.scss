@@ -5,6 +5,7 @@
 @import 'about_section';
 @import 'about_footer';
 @import 'tooltip';
+@import 'main_illustration';
 
 // Main Site Container taking full width and height
 #main-container {
@@ -26,46 +27,13 @@
     margin: 2rem 2rem 1rem 2rem;
     padding: 2rem;
 
+    @media screen and (max-width: 640px) {
+      padding: 0;
+    }
+
     .top-section {
       display: flex;
       flex-direction: column;
-    }
-  }
-
-  .illustration {
-    align-self: flex-end;
-    background-image: url('./assets/main.jpg');
-    display: flex;
-    width: 100%;
-    height: 100%;
-    /* align-self: flex-end; */
-    background-image: url(/src/assets/main.jpg);
-    background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    // position: relative;
-
-    // img {
-    //   position: absolute;
-    // }
-
-    @media screen and (max-width: 1186px) {
-      max-width: 300px;
-      overflow-x: hidden;
-    }
-
-
-    @media screen and (max-width: 1024px) {
-      background-image: url(/src/assets/main-slice.jpg);
-      background-position: top;
-      display: block;
-      max-width: 100%;
-      min-height: 150px;
-    }
-
-    @media screen and (max-width: 640px) {
-      // clip: rect(0, 100px, 200px, 0);
-      // overflow: hidden;
     }
   }
 }

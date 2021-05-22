@@ -17,6 +17,11 @@
         margin-bottom: 0rem;
     }
 
+    @media screen and (max-width: 640px) {
+        margin-top: 0rem;
+    }
+
+
     // margin-top: 2rem;
 
     .paper-plane {
@@ -43,9 +48,10 @@
         position: relative;
         margin: 1rem 1rem 2rem 0;
 
-        @media screen and (max-width: 1024) {
+        @media screen and (max-width: 1024px) {
             margin-bottom: 0rem;
         }
+
 
         .button-content {
             display: flex;
@@ -67,9 +73,14 @@
                 width: 4rem;
                 transform: rotate(-90deg);
             }
-
-
         }
+
+        @media screen and (max-width: 640px) {
+            .button-content .end-btn {
+                font-size: 0.9rem;
+            }
+        }
+
 
         .bottom-underline {
             height: 10px;
