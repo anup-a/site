@@ -5,10 +5,13 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: $dark;
     color: $text;
-    font-size: 120%;
 
-    @media screen and (min-width: 641px) {
+    @media screen and (min-width: 1024) {
         overflow: hidden;
+    }
+
+    @media screen and (max-width: 786) {
+        font-size: 90%;
     }
 }
 
