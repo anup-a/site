@@ -1,0 +1,88 @@
+/*
+    About section - Footer
+*/
+.content-footer {
+    display: flex;
+    align-items: flex-end;
+    justify-self: flex-end;
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+        // font-size: 0.9rem;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 0rem;
+    }
+
+    // margin-top: 2rem;
+
+    .paper-plane {
+        position: absolute;
+        margin-top: 1rem;
+        right: 0;
+        // bottom: 0;
+        width: 400px;
+
+        img {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1) rotate(12deg);
+
+        }
+
+        @media (max-width: 1500px) {
+            display: none;
+        }
+
+
+    }
+
+    .button-art {
+        position: relative;
+        margin: 1rem 1rem 2rem 0;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 1rem;
+        }
+
+        .button-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .end-btn {
+                margin: 1rem 3rem;
+                padding: 1rem;
+                font-size: 1.3rem;
+            }
+
+            .semicircle-illustration {
+                z-index: 1;
+                width: 4rem;
+                transform: rotate(-90deg);
+            }
+
+
+        }
+
+        .bottom-underline {
+            height: 10px;
+            bottom: 0;
+
+            div {
+                height: 10px;
+            }
+        }
+    }
+
+    .triangle-illustration {
+        width: 2rem;
+        margin: 2rem;
+    }
+}

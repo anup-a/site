@@ -1,0 +1,50 @@
+@import 'colors';
+@import 'general';
+@import 'nav';
+@import 'components';
+@import 'about_section';
+@import 'about_footer';
+
+// Main Site Container taking full width and height
+#main-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  // text content
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin: 2rem 2rem 1rem 2rem;
+    padding: 2rem;
+
+    .top-section {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .illustration {
+    display: contents;
+    align-self: flex-end;
+    // position: relative;
+
+    // img {
+    //   position: absolute;
+    // }
+
+    @media screen and (max-width: 1024px) {}
+
+    @media screen and (max-width: 640px) {
+      // clip: rect(0, 100px, 200px, 0);
+      // overflow: hidden;
+    }
+  }
+}

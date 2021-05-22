@@ -1,0 +1,46 @@
+/*
+    About Content Styles
+*/
+.about-container {
+
+    @media (max-width: 1400px) {
+        margin-top: 1rem;
+    }
+
+    @media (max-width: 1300px) {
+        margin-top: 2rem;
+    }
+
+    @media (max-width: 1024px) {
+        margin-top: 4rem;
+    }
+
+
+    p.top-text {
+        font-size: 1.75rem;
+        letter-spacing: 1mm;
+    }
+
+    h1.name-heading {
+        margin-top: 0;
+        font-size: 3rem;
+
+        span.blue-text {
+            color: $blue
+        }
+
+        span.pink-text {
+            color: $pink
+        }
+    }
+
+    p.about-me-text {
+        font-size: 1.1rem;
+
+        @media screen and (max-width: 1024px) {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}

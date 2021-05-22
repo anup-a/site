@@ -1,0 +1,36 @@
+// highlight component
+
+.half-pink-highlight {
+  background: linear-gradient(to top, #fc466b99 50%, transparent 50%);
+}
+
+.half-blue-highlight {
+  background: linear-gradient(to top, #3F5EFB99 50%, transparent 50%);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+}
+
+
+// Underline Component
+.underline {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+
+  .bar-underline {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .blue {
+    background-color: $blue;
+  }
+
+  .pink {
+    background-color: $pink;
+  }
+}

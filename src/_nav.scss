@@ -1,0 +1,49 @@
+/* 
+      Navbar Styling
+    */
+.nav {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .anup-logo {
+        width: 3rem;
+
+    }
+
+    .social-links {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .top-underline {
+            top: 0;
+            height: 10px;
+
+            div {
+                height: 5px;
+            }
+        }
+
+        .links {
+            margin: 1.5rem 0.5rem 0 0.5rem;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                list-style-type: none;
+                margin: 0 1rem;
+                padding: 0.5rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
