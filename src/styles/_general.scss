@@ -34,7 +34,13 @@ img {
     opacity: 1;
 }
 
+.over-y-hidden {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
 .hide {
     opacity: 0;
+    display: none;
     transition: opacity 400ms;
 }
