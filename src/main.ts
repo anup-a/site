@@ -39,7 +39,7 @@ const hideLoader = () => {
     toggleElement(loaderWrapper, "hide");
     toggleElement(content, "show");
     toggleElement(illustration, "show");
-    main?.classList.remove("over-y-hidden");
+    // main?.classList.remove("over-y-hidden");
   }, 600);
 };
 
