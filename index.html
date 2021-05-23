@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script type="text/javascript">
+      var timerStart = Date.now();
+    </script>
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -14,6 +17,42 @@
   </head>
   <body>
     <div id="main-container">
+      <div class="loader-wrapper show" id="wrapper">
+        <div class="loader">
+          <svg
+            id="eTsEx1DfK6Y1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 762 642"
+            shape-rendering="geometricPrecision"
+            text-rendering="geometricPrecision"
+          >
+            <g id="eTsEx1DfK6Y2" style="isolation: isolate">
+              <g id="eTsEx1DfK6Y3">
+                <g id="eTsEx1DfK6Y4">
+                  <polygon
+                    id="blue-path"
+                    points="387.150000,8.720000 22.510000,619.280000 753.490000,619.280000 678.300000,496.040000 220.380000,496.040000 387.150000,8.720000"
+                    stroke="rgb(63,94,251)"
+                    fill="none"
+                    stroke-width="16"
+                    stroke-dasharray="2559.490000"
+                  />
+                  <polygon
+                    id="pink-path"
+                    points="467.530000,193.660000 610.180000,432.500000 324.230000,432.500000 353.640000,384.290000 532.770000,384.290000 467.530000,193.660000"
+                    fill="none"
+                    stroke="rgb(252,70,107)"
+                    stroke-width="16"
+                    stroke-dasharray="1001.230000"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+
       <div class="content">
         <div class="top-section">
           <!-- Navbar -->
@@ -23,7 +62,7 @@
               <img src="./src/assets/color-logo.png" alt="" />
             </div>
             <div class="social-links">
-              <div class="top-underline underline">
+              <div class="underline top-underline">
                 <div class="blue bar-underline"></div>
                 <div class="pink bar-underline"></div>
               </div>
@@ -97,7 +136,7 @@
                 </a>
               </p>
             </div>
-            <div class="bottom-underline underline">
+            <div class="underline bottom-underline">
               <div class="blue bar-underline"></div>
               <div class="pink bar-underline"></div>
             </div>
