@@ -15,13 +15,35 @@ body {
     }
 }
 
+
 a {
     text-decoration: none;
     color: $text;
+    position: relative;
+
+}
+
+a.cool-link {
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -1rem;
+        right: 0;
+        height: 15px;
+        width: 110%;
+        z-index: 10;
+        background: $dark;
+    }
 
     &:hover {
         text-decoration: underline dotted $grey 5px;
-        text-underline-offset: 3px;
+        text-underline-offset: 5px;
+
+        &::after {
+            width: 0%;
+            transition: width 300ms ease-in;
+        }
     }
 }
 

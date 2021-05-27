@@ -7,6 +7,8 @@
 @import 'styles/about_footer';
 @import 'styles/tooltip';
 @import 'styles/main_illustration';
+@import 'styles/credits';
+@import 'styles/animations/text';
 
 // Main Site Container taking full width and height
 #main-container {
@@ -25,8 +27,9 @@
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
-    margin: 2rem 2rem 1rem 2rem;
+    margin: 2rem 2rem 0rem 2rem;
     padding: 2rem;
+    padding-bottom: 0;
 
     @media screen and (max-width: 640px) {
       padding: 0;

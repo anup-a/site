@@ -37,7 +37,7 @@
 
         }
 
-        @media (max-width: 1500px) {
+        @media (max-width: 1300px) {
             display: none;
         }
 
@@ -66,6 +66,12 @@
                 margin: 1rem 3rem;
                 padding: 1rem;
                 font-size: 1.3rem;
+
+                a {
+                    &:hover {
+                        text-underline-offset: 5px;
+                    }
+                }
             }
 
             .semicircle-illustration {

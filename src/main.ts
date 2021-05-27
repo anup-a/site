@@ -4,6 +4,8 @@ const svglogo = document.getElementById("svglogo");
 const navLogo = document.getElementById("nav-logo");
 const content = document.getElementById("content");
 const illustration = document.getElementById("illustration");
+const about = document.getElementById("about-container");
+const navBar = document.getElementById("navbar");
 
 const navRect = navLogo?.getBoundingClientRect();
 const loaderRect = svglogo?.getBoundingClientRect();
@@ -30,7 +32,6 @@ window.onreadystatechange = () => {
 };
 
 const hideLoader = () => {
-  console.log(adjustHeight, adjustWidth);
   if (svglogo) {
     // svglogo.classList.add("translate-to-origin");
     svglogo.style.transform = `translateX(${adjustWidth}px) translateY(${adjustHeight}px) scale(0.5)`;
@@ -39,6 +40,8 @@ const hideLoader = () => {
     toggleElement(loaderWrapper, "hide");
     toggleElement(content, "show");
     toggleElement(illustration, "show");
+    toggleElement(about, "show");
+    toggleElement(navBar, "show");
     // main?.classList.remove("over-y-hidden");
   }, 600);
 };
