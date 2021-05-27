@@ -16,6 +16,8 @@
 
 #
 
+## Built with ❤ & <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
+
 ## Connect @
 
 <a href="mailto:aglawe.anup22@gmail.com">
